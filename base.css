@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.map .resource {
+	width: 50px;
+	height: 50px;
+	background: red;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+}
+
+	.resource.grainIncrease {
+		background: url('images/empty.jpg') no-repeat;
+	}
+
+	.resource.ironIncrease {
+		background: url('images/empty.jpg') no-repeat;
+	}
+
+	.resource.animalIncrease {
+		background: url('images/empty.jpg') no-repeat;
+	}
+
+	.resource.woodIncrease {
+		background: url('images/empty.jpg') no-repeat;
+	}
+
+	.resource .build {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background: green;
+		bottom: 0px;
+		right: 0px;
+
+	}
+
+.resource_bar span {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.recipebook {
+	clear: both;
+}
+
+
+.expBar {
+	width: 100%;
+	height: 20px;
+	position: relative;
+	background: #ccc;
+	border-bottom: 1px solid #333;
+}
+
+	.expBar .progressBar {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		z-index: 2;
+		background: hotpink;
+	}
+
+	.expBar .expText {
+		position: absolute;
+		left: 50%;
+		color: #333;
+		z-index: 3;
+		font-size: 14px;
+	}
